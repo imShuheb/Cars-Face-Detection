@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Original Image:</h1>
+    <img src="{{ url_for('static', filename='uploads/' + original_image) }}" alt="Original Image" width="300px">
+    
+    <h1>Annotated Image:</h1>
+    <img src="{{ url_for('static', filename='uploads/' + annotated_image) }}" alt="Annotated Image" width="1200px">
+</body>
+</html>
