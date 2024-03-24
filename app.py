@@ -75,14 +75,20 @@ def upload_file():
             )
             cv2.imwrite(annotated_filename, image)
 
-            # Display the uploaded image and the annotated image
-            return render_template(
-                "result.html",
-                original_image=file.filename,
-                annotated_image="annotated_" + file.filename,
-            )
+            # Redirect to the results page
+            return redirect(url_for('show_results', filename=file.filename))
 
     return render_template("upload.html")
+
+
+@app.route("/results/<filename>")
+def show_results(filename):
+    # Render the result template with original and annotated image paths
+    return render_template(
+        "result.html",
+        original_image=filename,
+        annotated_image="annotated_" + filename,
+    )
 
 
 if __name__ == "__main__":
