@@ -13,25 +13,25 @@ This is a simple web application built with Flask that allows users to upload im
 
 1. Clone the repository:
 
-    bash```
+    ```
     git clone https://github.com/your-username/image-object-detection-web-app.git
     ```
 
 2. Navigate to the project directory:
 
-   bash ```
+    ```
     cd image-object-detection-web-app
     ```
 
 3. Install the required dependencies:
 
-    bash```
+    ```
     pip install -r requirements.txt
     ```
 
 4. Run the Flask application:
 
-    bash```
+    ```
     python app.py
     ```
 
