@@ -46,15 +46,16 @@ This is a simple web application built with Flask that allows users to upload im
 
 ## Directory Structure
 
-├── app.py # Flask application script
-├── static # Static assets
-│ ├── uploads # Uploaded images and annotated images
-│ └── haarcascades # Haar cascade XML files for object detection
-├── templates # HTML templates
-│ ├── upload.html # Upload form template
-│ └── result.html # Results template
-├── README.md # Project documentation
-└── requirements.txt # Python dependencies
+- app.py                     # Flask application script
+- static                     # Static assets
+  - uploads                  # Uploaded images and annotated images
+  - haarcascades             # Haar cascade XML files for object detection
+- templates                  # HTML templates
+  - upload.html              # Upload form template
+  - result.html              # Results template
+- README.md                  # Project documentation
+- requirements.txt           # Python dependencies
+
 
 
 ## Dependencies
